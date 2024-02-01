@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { dataFake } from '../../data/datafake'
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })

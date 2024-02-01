@@ -10,10 +10,21 @@
   flex-direction: row;
 }
 
-.small-card__photo > img {
-  margin-right: 10px;
+.small-card__photo{
   width: 200px;
-  min-width: 200px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 10px;
+
+}
+
+.small-card__photo > img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+
 }
 
 .small-card__title {
