@@ -2,20 +2,20 @@
   <div class="container__small-card__content">
   <div class="small-card__column1">
     <div class="small-card__photo">
-      <img src="assets/placeholder_img.jpg"
-      alt=""
+      <img src="{{ photoCoverSmallCard }}"
+      alt="{{ photoAlt }}"
       height="100px"
       >
 
     </div>
   </div>
   <div class="small-card__column2">
-    <div class="big-card__title">
-      <h1><a href="#">Título do Post</a></h1>
+    <div class="small-card__title">
+      <h1><a [routerLink]="['content', id]">{{ smallCardTitle }}</a></h1>
 
     </div>
-    <div class="big-card__description">
-      <p>Super descrição do post</p>
+    <div class="small-card__description">
+      <p>{{ smallCardDescription }}</p>
 
     </div>
   </div>

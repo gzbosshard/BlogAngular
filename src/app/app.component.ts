@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from "./pages/home/home.component";
 
 
@@ -8,7 +8,7 @@ import { HomeComponent } from "./pages/home/home.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HomeComponent]
+    imports: [RouterOutlet, HomeComponent, RouterLink, RouterLinkActive, RouterModule]
 })
 export class AppComponent {
   title = 'angularblog';
